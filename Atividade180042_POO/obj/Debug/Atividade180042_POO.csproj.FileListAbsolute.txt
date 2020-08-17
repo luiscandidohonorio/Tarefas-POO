@@ -1,0 +1,7 @@
+C:\Users\Luís Guilherme\Desktop\Nova pasta\Atividade180042_POO\Atividade180042_POO\bin\Debug\Atividade180042_POO.exe.config
+C:\Users\Luís Guilherme\Desktop\Nova pasta\Atividade180042_POO\Atividade180042_POO\bin\Debug\Atividade180042_POO.exe
+C:\Users\Luís Guilherme\Desktop\Nova pasta\Atividade180042_POO\Atividade180042_POO\bin\Debug\Atividade180042_POO.pdb
+C:\Users\Luís Guilherme\Desktop\Nova pasta\Atividade180042_POO\Atividade180042_POO\obj\Debug\Atividade180042_POO.csprojAssemblyReference.cache
+C:\Users\Luís Guilherme\Desktop\Nova pasta\Atividade180042_POO\Atividade180042_POO\obj\Debug\Atividade180042_POO.csproj.CoreCompileInputs.cache
+C:\Users\Luís Guilherme\Desktop\Nova pasta\Atividade180042_POO\Atividade180042_POO\obj\Debug\Atividade180042_POO.exe
+C:\Users\Luís Guilherme\Desktop\Nova pasta\Atividade180042_POO\Atividade180042_POO\obj\Debug\Atividade180042_POO.pdb
