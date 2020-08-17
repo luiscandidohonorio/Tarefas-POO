@@ -1,0 +1,14 @@
+Super Classe:
+Humano
+Classe: 
+Pessoa
+Atributos: 
+- Nome (Int)
+- Idade (float)
+- Sexo (String)
+Ações (métodos)
+Correr
+Pular
+Andar
+Dançar
+Malhar
