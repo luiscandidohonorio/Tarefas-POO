@@ -1,44 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DadosPessoa
+using System.Globalization;
+namespace Course
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //Instancia criada
-            Pessoa L1 = new Pessoa();
-            Pessoa L2 = new Pessoa();
-             
-
-            //Entrada dos valores da primeira pessoa
-            Console.WriteLine("Dados da pessoa 1: ");
-            Console.WriteLine("Nome: ");
-            L1.Nome = Console.ReadLine();
-            Console.WriteLine("Idade: ");
-            L1.Idade = int.Parse(Console.ReadLine());
-
-            //Entrada dos valores da segunda pessoa
-            Console.WriteLine("Dados da pessoa 2: ");
-            Console.WriteLine("Nome: ");
-            L2.Nome = Console.ReadLine();
-            Console.WriteLine("Idade: ");
-            L2.Idade = int.Parse(Console.ReadLine());
-
-            //Condicional para comparar quem é a pessoa mais velha.
-
-            if(L1.Idade > L2.Idade)
-            {
-                Console.WriteLine("Pessoa mais velha: " + L1.Nome);
-            }
-
-            else 
-            {
-                Console.WriteLine ("Pessoa mais velha: " + L2.Nome);
-            }
+            Funcionario f1 = new Funcionario();
+            Funcionario f2 = new Funcionario();
+            Console.WriteLine("Dados do primeiro funcionário:");
+            Console.Write("Nome: ");
+            f1.Nome = Console.ReadLine();
+            Console.Write("Salário: ");
+            f1.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Dados do segundo funcionário:");
+            Console.Write("Nome: ");
+            f2.Nome = Console.ReadLine();
+            Console.Write("Salário: ");
+            f2.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double media = (f1.Salario + f2.Salario) / 2.0;
+            Console.WriteLine("Salário médio = " + media.ToString("F2", CultureInfo.InvariantCulture));
+        }
     }
 }
