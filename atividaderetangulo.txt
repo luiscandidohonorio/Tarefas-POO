@@ -1,0 +1,20 @@
+using System;
+class Mak
+{
+    public static void Main()
+    {
+        double L1, L2, peri, diago, area;
+        //declarao de variaveis
+        Console.WriteLine("Digite o cumprimento do retângulo:");
+        L1 = double.Parse(Console.ReadLine());
+        Console.WriteLine("\nDigite a altura do retângulo:");
+        L2 = double.Parse(Console.ReadLine());
+        //leitura delas
+        peri = ((L1 * 2) + (L2 * 2));
+        diago = ((L1 * L2) / 2);
+        area = (L1 * L2);
+        //calculos do exercicio
+        Console.WriteLine("\nPerimetro: " + peri + "\t" + "Diagonal: " + diago + "\t" + "Area: " + area);
+        Console.ReadLine();
+    }
+}
