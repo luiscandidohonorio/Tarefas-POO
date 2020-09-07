@@ -1,40 +1,26 @@
 ﻿using System;
 using System.Globalization;
-namespace Course 
+namespace Course
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Triangulo x, y;
-
-            x = new Triangulo();
-            y = new Triangulo();
-
-            Console.WriteLine("Entre com as medidas do triângulo X:");
-            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.WriteLine("Entre com as medidas do triângulo Y:");
-            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-            double areaX = x.Area();
-            double areaY = y.Area();
-
-            Console.WriteLine("Área de X = " + areaX.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("Área de Y = " + areaY.ToString("F2", CultureInfo.InvariantCulture));
-            if (areaX > areaY) {
-                Console.WriteLine("Maior área: X");
-            }
-            else
-            {
-                Console.WriteLine("Maior área: Y");
-            }
-            Console.ReadKey();
+            Funcionario func = new Funcionario();
+            Console.Write("Nome: ");
+            func.Nome = Console.ReadLine();
+            Console.Write("Salario bruto: ");
+            func.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Imposto: ");
+            func.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine();
+            Console.WriteLine("Funcionário: " + func);
+            Console.WriteLine();
+            Console.Write("Deseja aumentar o salário em qual porcentagem? ");
+            double porcent = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            func.AumentarSalario(porcent);
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + func);
         }
     }
-
-    
 }
